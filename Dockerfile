@@ -1,4 +1,4 @@
-FROM node:9999-nonexistent
+FROM node:22-alpine
 WORKDIR /app
 COPY package.json ./
 COPY app ./app
