@@ -1,0 +1,24 @@
+
+name: Docker Build Validation
+
+on:
+  push:
+    branches:
+      - main
+      - 'lab/ci-docker-build-failure'
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  docker-build:
+    name: Build Docker Image
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t ci-troubleshooting-lab:latest .
