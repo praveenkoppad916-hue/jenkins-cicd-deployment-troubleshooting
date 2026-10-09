@@ -28,5 +28,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Validate JavaScript syntax
+        run: |
+          node --check app/server.js
+          node --check app/build-config.js
+
       - name: Run automated tests
         run: npm test
