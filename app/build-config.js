@@ -8,7 +8,7 @@ const deploymentConfig = {
   application: 'payment-support-demo',
   environment: 'staging',
   port: 3000,
-  healthCheck: '/health'
+    healthCheck: '/health',
   version: '1.0.0'
 };
 
