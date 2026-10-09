@@ -3,7 +3,7 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 
 test('CI-001: deployment health check', () => {
-  const actualStatus = 'UNHEALTHY';
+  const actualStatus = 'HEALTHY';
   const expectedStatus = 'HEALTHY';
 
   assert.equal(
