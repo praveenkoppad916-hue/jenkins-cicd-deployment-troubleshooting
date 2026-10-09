@@ -13,6 +13,6 @@
     "node": ">=20"
   },
   "dependencies": {
-    "express": "9999.0.0"
+    "express": "^4.21.2"
   }
 }
