@@ -1,6 +1,30 @@
 # Jenkins CI/CD & Deployment Troubleshooting Lab
 
-A hands-on, synthetic production-support lab demonstrating build validation, application tests, Docker packaging, local deployment, health checks, failure diagnosis, and rollback concepts.
+A hands-on, synthetic production-support lab demonstrating
+build validation, application tests, Docker packaging,
+local deployment, health checks, failure diagnosis,
+and rollback concepts.
+## Completed CI/CD Troubleshooting Labs
+
+This project includes four simulated CI/CD incidents covering failure investigation, root-cause analysis, corrective actions, and recovery validation.
+
+| Lab | Failure Scenario | RCA Documentation |
+|---|---|---|
+| CI-001 | Deployment health-check failure | [View RCA](docs/CI-001-PIPELINE-FAILURE-RCA.md) |
+| CI-002 | JavaScript build validation failure | [View RCA](docs/CI-002-BUILD-FAILURE-RCA.md) |
+| CI-003 | npm dependency installation failure | [View RCA](docs/CI-003-DEPENDENCY-FAILURE-RCA.md) |
+| CI-004 | Docker base-image resolution failure | [View RCA](docs/CI-004-DOCKER-BUILD-FAILURE-RCA.md) |
+
+### Troubleshooting Methodology
+
+1. Reproduce the simulated failure on a feature branch.
+2. Examine GitHub Actions logs and identify the failing stage.
+3. Investigate the root cause.
+4. Apply and commit the fix.
+5. Verify successful CI execution.
+6. Document the root-cause analysis (RCA).
+7. Merge the validated changes through a pull request.
+
 
 > **Scope:** This is an independent learning project. All scenarios and logs are fictional and do not contain employer data. The initial Jenkins pipeline validates and packages the app; deployment and rollback are documented as follow-on exercises.
 
