@@ -1,4 +1,7 @@
 # Jenkins CI/CD & Deployment Troubleshooting Lab
+[![Node.js Validation](https://github.com/praveenkoppad916-hue/jenkins-cicd-deployment-troubleshooting/actions/workflows/node-validation.yml/badge.svg)](https://github.com/praveenkoppad916-hue/jenkins-cicd-deployment-troubleshooting/actions/workflows/node-validation.yml)
+
+[![Docker Build Validation](https://github.com/praveenkoppad916-hue/jenkins-cicd-deployment-troubleshooting/actions/workflows/docker-build.yml/badge.svg)](https://github.com/praveenkoppad916-hue/jenkins-cicd-deployment-troubleshooting/actions/workflows/docker-build.yml)
 
 A hands-on, synthetic production-support lab demonstrating
 build validation, application tests, Docker packaging,
