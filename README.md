@@ -83,6 +83,48 @@ See [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) for sample incidents and 
 - Reading console logs and separating build vs runtime failures
 - Using tests and health checks as release gates
 - Understanding safe rollback and why production deployments require approvals
+## Interview-Ready Project Explanation
+
+### Problem Statement
+
+CI/CD pipelines can fail during application validation, dependency installation, Docker image building, or deployment health checks. Production support engineers must identify the failing stage, investigate logs, and validate corrective actions.
+
+### My Implementation
+
+I developed a Jenkins CI/CD and deployment troubleshooting lab using Node.js, Docker, GitHub Actions, and a Jenkinsfile.
+
+The project contains four simulated production-support incidents:
+
+* **CI-001:** Deployment health-check failure.
+* **CI-002:** JavaScript build validation failure.
+* **CI-003:** npm dependency installation failure.
+* **CI-004:** Docker base-image resolution failure.
+
+For each incident, I reproduced the failure, investigated the relevant CI logs, identified the root cause, applied corrective actions, verified the results, and documented the RCA.
+
+### Architecture Explanation
+
+The Jenkinsfile defines the intended pipeline stages: source checkout, syntax validation, Node.js testing, and Docker image building.
+
+GitHub Actions independently performs automated Node.js and Docker build validation. Deployment health checks and rollback are included as learning exercises rather than a completed production deployment.
+
+### How I Would Explain This in an Interview
+
+"I built a CI/CD troubleshooting lab to understand how application build and deployment failures are investigated.
+
+I worked through four simulated incidents involving health-check failures, JavaScript validation errors, npm dependency issues, and Docker image resolution failures.
+
+For each scenario, I analyzed pipeline logs, identified the root cause, implemented a fix, and verified successful execution using GitHub Actions.
+
+I also documented incident RCAs and created a Jenkins pipeline definition covering application validation, testing, and Docker packaging.
+
+This project strengthened my ability to troubleshoot CI/CD failures and collaborate with DevOps and engineering teams during production incidents."
+
+### Skills Demonstrated
+
+**Jenkins · GitHub Actions · Docker · Node.js · CI/CD Troubleshooting · Log Analysis · RCA · Incident Management**
+
+**Scope:** The project demonstrates reproducible CI troubleshooting and automated validation. It does not claim a completed production deployment or live rollback implementation.
 
 ## Security notes
 
